@@ -3,9 +3,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #f6eee9;
+}
+
 /* nav */
 header {
-  background: #FFEFEF;
+  background: #ffe5ec;
   text-align: center;
 }
 
@@ -13,7 +17,7 @@ nav {
   font-family: "Inter";
   text-transform: uppercase;
   font-weight: 500;
-  background: #F4B5B5;
+  background: #886753;
   height: 60px;
   padding: 20px;
   width: 100%;
@@ -53,19 +57,27 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   padding: 10px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #F8B6BE;
+  padding: 10px;
 }
 
 /* fin nav */
 
 b,
 i {
-  color: #C89494;
+  color: #7d624f;
+  text-shadow: 1px 1px 0px #f4b5b5;
 }
 
 ::selection {
   color:#fff;
   background: #f5cccc;
-  text-shadow: 1px 1px 0px #C89494;
+  text-shadow: 1px 1px 0px #7d624f;
   }
 
 /* hero */
@@ -91,20 +103,47 @@ i {
   height: 40px;
 }
 
-/* fin hero */
-
 .encabezado {
   font-family: "Parisienne", cursive;
-  color: #C89494;
-  font-size: 45px;
+  color: #7d624f;
+  text-shadow: 1px 1px 0px #F8B6BE;
+  font-size: 50px;
   text-align: center;
 }
 
 .subencabezado {
   font-family: Source Serif 4;
-  color: #9E9E9E;
+  color: #7d624f;
   font-size: 20px;
   text-align: center;
+  font-style: italic;
+}
+
+/* fin hero */
+
+.somos {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+
+.titulo {
+  font-family: Thasadith;
+  letter-spacing: 1px;
+  color: #696969;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.parrafo {
+  font-family: Source Serif 4;
+  color: #696969;
+  font-size: 20px;
+  margin-bottom: 10px;
+  max-width: 800px;
 }
 
 .centrado {
@@ -113,20 +152,20 @@ i {
   text-align: center;
 }
 
-.titulo {
-  font-family: Thasadith;
-  letter-spacing: 1px;
-  color: #9E9E9E;
-  font-style: italic;
-  font-size: 40px;
-  margin-bottom: 20px;
+.vendidos {
+  font-family: "Parisienne", cursive;
+  color: #fff;
+  text-shadow: 1px 1px 1px #C89494;
+  font-size: 50px;
+  text-align: center;
+  background-color: #F4B5B5;
+  background-size: 100% 0;
+  transition: 0.5s;
 }
 
-.parrafo {
-  font-family: Source Serif 4;
-  color: #9E9E9E;
-  font-size: 20px;
-  margin-bottom: 10px;
+.vendidos:hover {
+color: #7d624f;
+text-shadow: 1px 1px 1px #C89494;
 }
 
 /* cajitas productos */
@@ -154,26 +193,32 @@ i {
 .caja {
   width: 250px;
   height: 300px;
-  background: #fff;
+  background: #f6eee9;
   border: solid 1px #e6e6e6;
   border-radius:9px;
-  box-shadow: inset 0 0 30px #e6e6e6, 0 0 2px #e6e6e6;
+  box-shadow: inset 0 0 30px #dcc8bc, 0 0 2px #dcc8bc;
   justify-content: center;
   text-align: center;
 }
 
 .title-caja {
-  display:flex
+  display:flex;
   font-family: Source Serif 4;
-  color: #7D7D7D;
+  color: #696969;
   font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .precio {
-  display:flex
+  display:flex;
   font-family: Source Serif 4;
-  color: #9E9E9E;
+  color: #696969;
   font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 a.button {
@@ -181,7 +226,7 @@ a.button {
   color:#ffffff; 
   text-shadow: 1px 1px 1px #FDA9D0;
   box-shadow: inset 0 0 16px #FDA9B8, 0 0 0px #FDA9B8;
-  -webkit-transition: 0.4s; -moz-transition: 0.4s;
+  transition: 0.5s;
   text-decoration:none; 
   font-family:calibri;  
   font-size:14px;
@@ -196,7 +241,6 @@ a.button {
   
   a.button:hover {
   background:#FFE2F0;
-  -webkit-transition: 0.4s; -moz-transition: 0.4s;
   color:#FDA9B8; 
   text-shadow: 1px 1px 1px #FFF;
   text-decoration:none; 
@@ -245,8 +289,9 @@ a.button {
 
 .tarjeta-container .titulo-principal {
   font-family: "Thasadith";
-  color: #9E9E9E;
+  color: #696969;
   font-style: italic;
+  text-shadow: 1px 1px 0px #fff;
   font-size: 50px;
   text-align: center;
 }
@@ -260,7 +305,7 @@ a.button {
 
 .tarjeta-container div p {
   font-family: "Source Serif 4", serif;
-  color: #9E9E9E;
+  color: #696969;
   font-size: 20px;
   text-align: center;
 }
@@ -268,8 +313,7 @@ a.button {
 /* fin tarjetitas */
 
 .michi {
-  height: 200px;
-  width: 200px;
+  height: 100px;
 }
 
 .redes {
@@ -296,11 +340,41 @@ footer {
 footer p {
   align-items: center;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter";
   color: #fff;
   text-shadow: 1px 1px 0px #C89494;
   font-size: 20px;
 }
+
+.pseudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+  }
+  
+  .pseudo-box {
+  flex-grow: 1;
+  flex-basis: 100px;
+  flex-wrap: wrap;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+  }
+  
+  .pseudo-box:hover {
+  flex-grow: 3;
+  }
+  
+  .pseudo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
 
 @media (max-width: 768px) {
   .tarjeta-container {
@@ -315,10 +389,65 @@ footer p {
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  
-  .titulo {
-  font-size: 2rem;
+
+  .tarjeta-container .titulo-principal {
+    font-size: 2rem;
   }
+
+  .tarjeta-container div p {
+    font-size: 17px;
+  }
+
+  .hero img {
+    width: 200px;
+    margin-bottom: -17px;
+  }
+
+  .encabezado {
+    font-size: 43px;
+}
+
+.hero {
+  min-height: 350px;
+  max-height: 100%;
+}
+
+.subencabezado {
+  font-size: 18px;
+  margin-bottom: -17px;
+}
+
+.nav {
+  height: 40px;
+  padding: 20px;
+  width: 100%;
+}
+
+nav img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-social-media a img {
+  width: 25px;
+  height: 100%;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.parrafo {
+  font-size: 17px;
+}
+
+.final {
+  font-size: 17px;
+}
+
+footer p {
+  font-size: 16px;
+}
 
 }
 
