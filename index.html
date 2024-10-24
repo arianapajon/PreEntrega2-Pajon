@@ -4,67 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Amary Tienda - Accesorios de Bijouterie</title>
+    <meta name="title" content="Amary Tienda - Accesorios de Bijouterie" />
+    <meta name="description"
+        content="En esta tienda vas a poder encontrar variedad de accesorios de uso personal con diseños únicos y personalizables." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Amary Tienda - Accesorios de Bijouterie" />
+    <meta property="og:description"
+        content="En esta tienda vas a poder encontrar variedad de accesorios de uso personal con diseños únicos y personalizables." />
+    <meta property="og:image" content="images/metatag.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Amary Tienda - Accesorios de Bijouterie" />
+    <meta property="twitter:description"
+        content="En esta tienda vas a poder encontrar variedad de accesorios de uso personal con diseños únicos y personalizables." />
+    <meta property="twitter:image" content="images/metatag.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Amary Tienda</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Parisienne&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fin fuentes-->
 </head>
 
 <body>
     <!--Encabezado del sitio web-->
     <header id="top">
-        <!--NAVBAR-->
-        <nav>
-            <img src="images/corazon.png" alt="Corazon">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="pages/inspiracion.html">INSPIRACIÓN</a>
-                </li>
-                <li>
-                    <a href="pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
 
-            <div class="nav-social-media">
-                <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="images/insta48.png" class="social" alt="Instagram">
-                </a>
-                <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="images/facebook.png" class="social" alt="Facebook">
-                </a>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <img src="images/corazon.png" alt="Corazon">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <img src="images/corazon.png" alt="Corazon">
+            <ul>
+                <li><a href="index.html" class="nav-link">INICIO</a></li>
+                <li><a href="pages/productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="pages/inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="pages/nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="pages/contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
         </nav>
-        <!-- Fin NAVBAR-->
+
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <button id="close-drawer">&times;</button>
+            </div>
+            <ul>
+                <li><a href="index.html" class="nav-link">INICIO</a></li>
+                <li><a href="pages/productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="pages/inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="pages/nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="pages/contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
 
         <!--Logo Michi-->
         <section class="hero">
@@ -148,6 +175,9 @@
     <footer>
         <p>© Copyright 2024 - Amary Tienda</p>
     </footer>
+
+    <script src="js/scrip.js"></script>
+
 </body>
 
 </html>

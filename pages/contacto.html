@@ -8,63 +8,64 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Amary Tienda</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Parisienne&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fin fuentes-->
 </head>
 
 <body>
     <!--Encabezado del sitio web-->
     <header id="top">
-        <!--NAVBAR-->
-        <nav>
-        <img src="../images/corazon.png" alt="Corazon">
-            <ul class="nav-list">
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="inspiracion.html">INSPIRACIÓN</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-
-            <div class="nav-social-media">
-                <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/insta48.png" class="social" alt="Instagram">
-                </a>
-                <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/facebook.png" class="social" alt="Facebook">
-                </a>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <img src="../images/corazon.png" alt="Corazon">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <img src="../images/corazon.png" alt="Corazon">
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
         </nav>
-        <!-- Fin NAVBAR-->
+
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <button id="close-drawer">&times;</button>
+            </div>
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
 
         <!--Logo Michi-->
         <section class="hero">
@@ -83,18 +84,29 @@
 
         <div class="cortinaborder"></div>
 
-        <section class="centrado">
-            <p class="titulo"><b>Contacto</b></p>
-            <div class="parrafo">
-                <li>Instagram: @amary.tienda</li>
-                <li>Facebook: @amary.tienda</li>
-                <li>Mail: amary.tienda@gmail.com</li>
-                <li>Teléfono: 1151126922</li>
-                </div>
-                <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/instaa.png" class="redes" alt="Instagram"></a>
-                <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/face.png" class="redes" alt="Facebook"></a>
+        <section class="contacto-container">
+            <p class="contacto-titulo"><b>Suscribete gratis</b></p>
+            <p class="contacto-parrafo">¡Suscribete a nuestro newsletter para recibir todas las novedades y ofertas exclusivas!</p>
+        
+        <!-- Formulario de contacto -->
+        <div id="formulario">
+            <form action="#" class="formulario" id="formdata">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su mail" class="formulario__input">
+
+                <button type="button" class="boton" id="botonenviar">Enviar</button>
+
+            </form>
+        </div>
+        <!--Fin formulario-->
+        </section>
+
+        <section class="contacto-container">
+
+            <p class="final">♡ No olvides seguirnos en nuestras redes sociales ♡</p>
+            <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                <img src="../images/instaa.png" class="contacto-redes" alt="Instagram"></a>
+            <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                <img src="../images/face.png" class="contacto-redes" alt="Facebook"></a>
         </section>
 
     </main>
@@ -103,6 +115,8 @@
     <footer>
         <p>© Copyright 2024 - Amary Tienda</p>
     </footer>
+
+    <script src="../js/scrip.js"></script>
 
 </body>
 

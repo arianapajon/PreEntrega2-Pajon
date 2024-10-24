@@ -1,0 +1,47 @@
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-height: 70vh;
+    max-height: 100%;
+
+    img {
+        width: 300px;
+        margin-bottom: -20px;
+        transition: 1.5s;
+        &:hover {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .encabezado {
+        font-family: "Parisienne", cursive;
+        color: #7d624f;
+        text-shadow: 1px 1px 0px #F8B6BE;
+        font-size: 50px;
+        text-align: center;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+
+    .subencabezado {
+        font-family: Source Serif 4;
+        color: #7d624f;
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+/* fin hero */
+
+.cortinaborder {
+    background-image: url('../images/cortinita.png');
+    width: 100%;
+    height: 40px;
+}

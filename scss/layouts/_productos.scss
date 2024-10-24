@@ -1,0 +1,105 @@
+/* cajitas productos */
+
+.padre-caja {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    place-content: center;
+    place-items: center;
+
+    .caja {
+        width: 250px;
+        height: 300px;
+        background: #f6eee9;
+        border: solid 1px #e6e6e6;
+        border-radius: 9px;
+        box-shadow: inset 0 0 30px #dcc8bc, 0 0 2px #dcc8bc;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title-caja {
+        display: flex;
+        font-family: Source Serif 4;
+        color: #696969;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .producto-img {
+        width: 207px;
+        height: 205px;
+        border-radius: 100%;
+    }
+
+    .precio {
+        display: flex;
+        @include medidas;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a.button {
+        background: #F4B5B5;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #FDA9D0;
+        box-shadow: inset 0 0 16px #FDA9B8, 0 0 0px #FDA9B8;
+        transition: 0.5s;
+        text-decoration: none;
+        font-family: calibri;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 9px;
+        width: 100px;
+        text-align: center;
+        justify-content: center;
+        display: inline-flex;
+        margin-top: 5px;
+
+        &:hover {
+            background: #FFE2F0;
+            color: #FDA9B8;
+            text-shadow: 1px 1px 1px #FFF;
+            text-decoration: none;
+            font-family: calibri;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 9px;
+            width: 100px;
+            text-align: center;
+            justify-content: center;
+            display: inline-flex;
+            margin-top: 5px;
+        }
+    }
+}
+
+/* fin cajitas productos */
+
+
+/* buscador */
+
+#buscador {
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 24px;
+    width: 300px;
+    border: transparent;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.centrar-buscador {
+    text-align: center;
+}
+
+/* fin buscador */

@@ -8,63 +8,64 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Amary Tienda</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Parisienne&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fin fuentes-->
 </head>
 
 <body>
     <!--Encabezado del sitio web-->
     <header id="top">
-        <!--NAVBAR-->
-        <nav>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
             <img src="../images/corazon.png" alt="Corazon">
-            <ul class="nav-list">
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="inspiracion.html">INSPIRACIÓN</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-
-            <div class="nav-social-media">
-                <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/insta48.png" class="social" alt="Instagram">
-                </a>
-                <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/facebook.png" class="social" alt="Facebook">
-                </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <img src="../images/corazon.png" alt="Corazon">
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
         </nav>
-        <!-- Fin NAVBAR-->
+
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <button id="close-drawer">&times;</button>
+            </div>
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
 
         <!--Logo Michi-->
         <section class="hero">
@@ -90,52 +91,52 @@
         <section id="cajitas">
             <article class="padre-caja">
                 <div class="caja 1">
-                    <img src="../images/diana.jpg" class="imagensita" alt="Modelo de collar Diana" />
+                    <img src="../images/diana.jpg" class="producto-img" alt="Modelo de collar Diana" />
                     <p class="title-caja">Collar Diana</p>
                     <p class="precio">$5.500</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/" target="_blank"> Comprar </a>
                 </div>
                 <div class="caja 2">
-                    <img src="../images/moñito.jpg" class="imagensita" alt="Modelo de collar Moñito" />
+                    <img src="../images/moñito.jpg" class="producto-img" alt="Modelo de collar Moñito" />
                     <p class="title-caja">Collar Moñito</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/" target="_blank"> Comprar </a>
                 </div>
                 <div class="caja 3">
-                    <img src="../images/heartlock.jpg" class="imagensita" alt="Modelo de collar Heart Lock" />
+                    <img src="../images/heartlock.jpg" class="producto-img" alt="Modelo de collar Heart Lock" />
                     <p class="title-caja">Collar Heartlock</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/" target="_blank"> Comprar </a>
                 </div>
                 <div class="caja 4">
-                    <img src="../images/saturn.jpg" class="imagensita" alt="Modelo de collar Saturn" />
+                    <img src="../images/saturn.jpg" class="producto-img" alt="Modelo de collar Saturn" />
                     <p class="title-caja">Collar Saturn</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/" target="_blank"> Comprar </a>
                 </div>
                 <div class="caja 5">
-                    <img src="../images/estrellitas.jpg" class="imagensita" alt="Modelo de collar Estrellitas" />
+                    <img src="../images/estrellitas.jpg" class="producto-img" alt="Modelo de collar Estrellitas" />
                     <p class="title-caja">Collar Estrellitas</p>
                     <p class="precio">$5.500</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/" target="_blank"> Comprar </a>
                 </div>
                 <div class="caja 6">
-                    <img src="../images/osito.jpg" class="imagensita" alt="Modelo de collar Osito" />
+                    <img src="../images/osito.jpg" class="producto-img" alt="Modelo de collar Osito" />
                     <p class="title-caja">Collar Osito</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/"> Comprar </a>
                 </div>
                 <div class="caja 7">
-                    <img src="../images/pinky.jpg" class="imagensita" alt="Modelo de collar Pinky" />
+                    <img src="../images/pinky.jpg" class="producto-img" alt="Modelo de collar Pinky" />
                     <p class="title-caja">Collar Pinky</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/"> Comprar </a>
                 </div>
                 <div class="caja 8">
-                    <img src="../images/frutiger.jpg" class="imagensita" alt="Modelo de collar Frutiger Aero" />
+                    <img src="../images/frutiger.jpg" class="producto-img" alt="Modelo de collar Frutiger Aero" />
                     <p class="title-caja">Collar Frutiger Aero</p>
                     <p class="precio">$5.000</p>
-                        <a class="button" href="link"> Comprar </a>
+                        <a class="button" href="https://www.instagram.com/amary.tienda/"> Comprar </a>
                 </div>
             </article>
         </section>
@@ -145,6 +146,9 @@
     <footer>
         <p>© Copyright 2024 - Amary Tienda</p>
     </footer>
+
+    <script src="../js/scrip.js"></script>
+    
 </body>
 
 </html>

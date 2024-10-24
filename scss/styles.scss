@@ -1,0 +1,19 @@
+// base
+@import "base/variables";
+@import "base/reset";
+
+// components
+
+@import "components/navbar";
+@import "components/hero";
+@import "components/pseudo";
+@import "components/footer";
+@import "components/menuhamburg";
+
+// layouts
+@import "layouts/contacto";
+@import "layouts/index";
+@import "layouts/inspiracion";
+@import "layouts/productos";
+@import "layouts/nosotros";
+@import "layouts/media";

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background: #f6eee9;
+}
+
+b,
+i {
+    color: #7d624f;
+    text-shadow: 1px 1px 0px #f4b5b5;
+}
+
+::selection {
+    color: #fff;
+    background: #f5cccc;
+    text-shadow: 1px 1px 0px #7d624f;
+}

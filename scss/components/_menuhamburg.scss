@@ -1,0 +1,133 @@
+/* MENU HAMBURGUESA */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+    }
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Inter";
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu-hamburguesa {
+    display: none;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -650px;
+    width: 250px;
+    height: 100%;
+    background-color: #886753;
+    color: #886753;
+    overflow-y: auto;
+    transition: 0.5s ease all;
+    z-index: 1000;
+
+    .drawer-header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+
+        button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    z-index: 900;
+}
+
+.drawer-open {
+    right: 0; //siempre debe coincidir esta propiedad con el de la linea 190, en la clase drawer.
+}
+
+.overlay-active {
+    opacity: 1;
+    visibility: visible;
+    display:block;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 14px;
+        background-color: #886753;
+
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            transition: 0.5s;
+
+            span {
+                display: block;
+                height: 3px;
+                width: 35px;
+                background-color: #FFF;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .drawer {
+        display: block;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
+/* FIN MENU HAMBURGUESA */

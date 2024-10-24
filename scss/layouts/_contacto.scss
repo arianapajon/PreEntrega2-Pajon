@@ -1,0 +1,63 @@
+.contacto-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:60%;
+
+    .contacto-titulo {
+        font-family: Thasadith;
+        letter-spacing: 1px;
+        color: #696969;
+        font-style: italic;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contacto-parrafo {
+        @include medidas;
+        margin-bottom: 10px;
+    }
+
+    .contacto-redes {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        margin-top:15px;
+    }
+}
+
+.formulario {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    gap:1rem;
+    margin-top: -16px;
+}
+
+.formulario__input {
+    font-family: 'Inter';
+    width: 30%;
+    padding: 0.625rem;
+    border: none;
+    border: double 2px #f4b5b5;
+    outline: none;
+    transition: 0.5s;
+}
+
+.boton {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 10px;
+    padding: 3px;
+    align-self:center;
+    margin-top: 0.5rem;
+    background-color: #886753;
+    color: #fff;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}

@@ -8,63 +8,64 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Amary Tienda</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Parisienne&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fin fuentes-->
 </head>
 
 <body>
     <!--Encabezado del sitio web-->
     <header id="top">
-        <!--NAVBAR-->
-        <nav>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
             <img src="../images/corazon.png" alt="Corazon">
-            <ul class="nav-list">
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="inspiracion.html">INSPIRACIÓN</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-
-            <div class="nav-social-media">
-                <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/insta48.png" class="social" alt="Instagram">
-                </a>
-                <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
-                    <img src="../images/facebook.png" class="social" alt="Facebook">
-                </a>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <img src="../images/corazon.png" alt="Corazon">
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
         </nav>
-        <!-- Fin NAVBAR-->
+
+        <div class="drawer" id="drawer">
+            <div class="drawer-header">
+                <button id="close-drawer">&times;</button>
+            </div>
+            <ul>
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="inspiracion.html" class="nav-link">INSPIRACIÓN</a></li>
+                <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <div class="nav-social-media">
+                    <a title="Instagram" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/insta48.png" class="social" alt="Instagram">
+                    </a>
+                    <a title="Facebook" href="https://www.instagram.com/amary.tienda/" target="_blank">
+                        <img src="../images/facebook.png" class="social" alt="Facebook">
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="overlay" id="overlay"></div>
 
         <!--Logo Michi-->
         <section class="hero">
@@ -85,7 +86,7 @@
 
         <section class="pseudo-container">
             <div class="pseudo-box">
-                <img src="../images/rilakkumas.jpg" alt="Diseño Moñito Blanco">
+                <img src="../images/rilakkumas2.jpg" alt="Diseño Moñito Blanco">
             </div>
 
             <div class="pseudo-box">
@@ -109,12 +110,33 @@
             </div>
         </section>
 
+        <section class="inspo-container">
+            <p class="inspo-titulo"><b>Inspiración de la marca</b></p>
+            <p class="inspo-parrafo">
+                Siempre he sentido una fascinación por el mundo de la moda y la estética. 
+A medida que fui creciendo, también fui encontrando mi estilo. Fui incorporando a mi estilo todo aquello con lo 
+que me identifico y deseo proyectar de mi hacia los demás. Realmente no me identifico con una sola estética, pero 
+mi marca la centré principalmente en las estéticas "Lolita" y la más reciente catalogada "coquette". Estos estilos 
+me inspiraron a crear una marca que encapsulase esa magia.</p>
+<p class="inspo-parrafo"> Los collares, elaborados principalmente con perlas, buscan inspirar la delicadeza y el encanto que tanto admiro.</p>
+
+<p class="inspo-parrafo">La identidad del sitio web de la marca, se basa en la estética "Neapolitan", mezclando tonos marrones, rosas y 
+blancos, volados de encaje y moños, creando un ambiente acogedor y dulce. Cada elemento está pensado para que la 
+experiencia de compra sea tan encantadora como los collares mismos.</p>
+
+<p class="inspo-parrafo">Mi inspiración proviene de un deseo de compartir esa felicidad estética y permitir que cada persona exprese su 
+estilo único, combinando lo dulce con lo elegante. </p>
+<p class="final">♡ Espero que cada collar cuente una historia y haga que quien lo lleve se sienta especial. ♡</p>
+        </section>
+
     </main>
 
     <!--Pie de página-->
     <footer>
         <p>© Copyright 2024 - Amary Tienda</p>
     </footer>
+
+    <script src="../js/scrip.js"></script>
 
 </body>
 

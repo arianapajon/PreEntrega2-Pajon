@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+    .tarjeta-container {
+        flex-wrap: wrap;
+        &:nth-child(odd) {
+            flex-wrap: wrap-reverse;
+        }
+
+        .titulo-principal {
+            font-size: 2rem;
+        }
+
+        div p {
+            font-size: 18px;
+        }
+        .tarjeta-img {
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+
+    .hero {
+        min-height: 350px;
+        max-height: 100%;
+        margin-top: -40px;
+
+        img {
+            width: 200px;
+            margin-bottom: -17px;
+        }
+
+        .encabezado {
+            font-size: 40px;
+        }
+
+        .subencabezado {
+            font-size: 18px;
+            margin-bottom: -17px;
+        }
+    }
+
+    .nav {
+        height: 40px;
+        padding: 20px;
+        width: 100%;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .nav-social-media a img {
+            width: 25px;
+            height: 100%;
+        }
+    
+    
+    }
+
+    .somos-container {
+        .somos-titulo {
+            font-size: 35px;
+        }
+    
+        .somos-parrafo {
+            font-size: 18px;
+        }
+    }
+
+    .inspo-container {
+        .inspo-titulo {
+            font-size: 35px;
+        }
+    
+        .inspo-parrafo{
+            font-size: 18px;
+        }
+    }
+
+    .contacto-container {
+        .contacto-titulo {
+            font-size: 35px;
+        }
+    
+        .contacto-parrafo {
+            font-size: 18px;
+        }
+    
+        .contacto-redes {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .final {
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    .vendidos {
+        font-size: 17px;
+        background-color: #F4B5B5;
+        background-size: 50% 0;
+
+        &:hover {
+            font-size: 17px;
+        }
+    }
+    .pseudo-container {
+        padding:10px;
+        flex-wrap: wrap;
+        gap:5px;
+
+        .pseudo-box {
+            height: 150px;
+        }
+    }
+}

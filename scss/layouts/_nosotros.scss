@@ -1,0 +1,41 @@
+.somos-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .somos-titulo {
+        font-family: Thasadith;
+        letter-spacing: 1px;
+        color: #696969;
+        font-style: italic;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .somos-parrafo {
+        @include medidas;
+        margin-bottom: 10px;
+        max-width: 800px;
+    }
+
+    .ari {
+        margin-top: 25px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+.redes {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.centrado {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
