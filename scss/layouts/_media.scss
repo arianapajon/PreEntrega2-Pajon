@@ -10,7 +10,7 @@
         }
 
         div p {
-            font-size: 18px;
+            font-size: 17px;
         }
         .tarjeta-img {
             width: 100%;
@@ -57,38 +57,70 @@
     }
 
     .somos-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         .somos-titulo {
-            font-size: 35px;
+            font-size: 2rem;
         }
     
         .somos-parrafo {
-            font-size: 18px;
+            font-size: 17px;
+        }
+    }
+
+    .somos-container2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .somos-titulo {
+            font-size: 2rem;
+        }
+    
+        .somos-parrafo {
+            font-size: 17px;
         }
     }
 
     .inspo-container {
         .inspo-titulo {
-            font-size: 35px;
+            font-size: 2rem;
         }
     
         .inspo-parrafo{
-            font-size: 18px;
+            font-size: 17px;
         }
     }
 
     .contacto-container {
+        display: flex;
+        flex-direction: column;
         .contacto-titulo {
-            font-size: 35px;
+            font-size: 2rem;
         }
     
         .contacto-parrafo {
-            font-size: 18px;
+            font-size: 17px;
         }
     
         .contacto-redes {
             width: 80px;
             height: 80px;
         }
+        img {
+            height:230px;
+        }
+    }
+
+    .container2 {
+        .contacto-redes {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .formulario__input {
+        width: 100%;
     }
 
     .final {
@@ -116,5 +148,8 @@
         .pseudo-box {
             height: 150px;
         }
+    }
+    .formulario__input {
+        width: 80%;
     }
 }

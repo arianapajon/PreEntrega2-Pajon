@@ -3,6 +3,23 @@
     justify-content: center;
     text-align: center;
     height:60%;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    padding:20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        height:400px;
+        outline-offset: -4px;
+        outline: 1px solid #fff;
+    }
 
     .contacto-titulo {
         font-family: Thasadith;
@@ -11,12 +28,20 @@
         font-style: italic;
         font-size: 40px;
         margin-bottom: 20px;
+        
     }
 
     .contacto-parrafo {
         @include medidas;
         margin-bottom: 10px;
     }
+}
+
+.container2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:60%;
 
     .contacto-redes {
         width: 100px;
@@ -29,18 +54,19 @@
 .formulario {
     grid-area: form;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     align-content: center;
-    padding: 2rem;
+    padding: 1rem;
     gap:1rem;
-    margin-top: -16px;
+    margin-top: 10px;
 }
 
 .formulario__input {
     font-family: 'Inter';
-    width: 30%;
+    width: 120%;
     padding: 0.625rem;
     border: none;
     border: double 2px #f4b5b5;
@@ -60,4 +86,10 @@
     border: none;
     transition: 0.5s;
     cursor: pointer;
+    outline-offset: -3px;
+    outline: 1px dashed #fff;
+
+    &:hover {
+        background-color: #F4B5B5;
+    }
 }

@@ -1,9 +1,17 @@
 .somos-container {
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding:30px;
+    gap:2rem;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
 
     .somos-titulo {
         font-family: Thasadith;
@@ -19,6 +27,35 @@
         margin-bottom: 10px;
         max-width: 800px;
     }
+}
+
+.somos-container2 {
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    gap:2rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .somos-titulo {
+        font-family: Thasadith;
+        letter-spacing: 1px;
+        color: #696969;
+        font-style: italic;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .somos-parrafo {
+        @include medidas;
+        max-width: 800px;
+    }
 
     .ari {
         margin-top: 25px;
@@ -26,6 +63,7 @@
         height: 200px;
         border-radius: 100%;
     }
+    
 }
 
 .redes {
@@ -35,7 +73,7 @@
 }
 
 .centrado {
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }

@@ -17,10 +17,15 @@ b,
 i {
     color: #7d624f;
     text-shadow: 1px 1px 0px #f4b5b5;
+    transition: 1s;
+    &:hover {
+        color: #f4b5b5;
+        text-shadow: 1px 1px 0px #fff;
+    }
 }
 
 ::selection {
     color: #fff;
-    background: #f5cccc;
+    background: #7d624fa2;
     text-shadow: 1px 1px 0px #7d624f;
 }
