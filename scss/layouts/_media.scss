@@ -60,19 +60,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        .somos-titulo {
-            font-size: 2rem;
-        }
-    
-        .somos-parrafo {
-            font-size: 17px;
-        }
-    }
-
-    .somos-container2 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        gap:1rem;
+        padding:15px;
         .somos-titulo {
             font-size: 2rem;
         }
